@@ -1,0 +1,1 @@
+# fin_fin_mind_official_page
