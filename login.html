@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - FinFin Mind</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Image/favicon.png">
+    
+    <link rel="stylesheet" href="login.css">   <!-- File style riêng cho trang login -->
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- NAVBAR -->
+    <nav class="bg-zinc-950 border-b border-blue-900 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html">
+                <span class="logo-font text-3xl font-semibold tracking-tighter text-blue-400">FinFin Mind</span>
+                </a>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+                <a href="muc_tieu.html" class="nav-link text-blue-100 hover:text-white">Mục tiêu</a>
+                <a href="y_tuong_phat_trien.html" class="nav-link text-blue-100 hover:text-white">Ý tưởng phát triển</a>
+                <a href="ke-hoach.html" class="nav-link text-blue-100 hover:text-white">Kế hoạch</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+               <a href="mini_game.html" class="px-6 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-3xl ...">
+                    <i class="fa-solid fa-gamepad"></i>
+                    Mini game
+                </a>
+                
+                <a href="#" onclick="alert('Chức năng tải app đang được phát triển! 🚀 (demo website)')" 
+                   class="px-6 py-3 bg-white text-blue-950 rounded-3xl font-semibold text-sm flex items-center gap-2 hover:bg-blue-100 transition">
+                    <i class="fa-solid fa-download"></i>
+                    Tải ngay
+                </a>
+                <a href="login.html" 
+                   class="px-6 py-3 bg-white text-blue-950 rounded-3xl font-semibold text-sm hover:bg-blue-100 transition">
+                    Đăng nhập
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- LOGIN SECTION -->
+    <section class="login-bg min-h-screen flex items-center relative">
+        <div class="bubbles"><span></span></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="max-w-md mx-auto">
+                <!-- Header -->
+                <div class="text-center mb-10">
+                    <div class="inline-flex items-center gap-3 mb-4"><br>
+                    </div>
+                    <h1 class="logo-font text-5xl font-bold tracking-tighter gradient-title">
+                        Chào mừng trở lại!
+                    </h1>
+                    <p class="mt-3 text-lg text-zinc-600">
+                        Đăng nhập để tiếp tục hành trình phát triển tư duy phản biện cho con
+                    </p>
+                </div>
+
+                <!-- Login Card -->
+                <div class="login-card p-10">
+                    <form id="loginForm" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-zinc-700 mb-2">
+                                Email hoặc số điện thoại
+                            </label>
+                            <input type="text" id="username" 
+                                   class="login-input w-full px-6 py-4 rounded-2xl"
+                                   placeholder="example@email.com hoặc 0123456789" required>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-zinc-700 mb-2">
+                                Mật khẩu
+                            </label>
+                            <div class="relative">
+                                <input type="password" id="password" 
+                                       class="login-input w-full px-6 py-4 pr-12 rounded-2xl"
+                                       placeholder="••••••••" required>
+                                <button type="button" id="togglePassword" 
+                                        class="absolute right-5 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-600">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between text-sm">
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" class="w-4 h-4 accent-blue-500">
+                                <span class="text-zinc-600">Ghi nhớ đăng nhập</span>
+                            </label>
+                            <a href="#" onclick="alert('Chức năng Quên mật khẩu đang được phát triển')" 
+                               class="text-blue-500 hover:text-blue-600 font-medium">
+                                Quên mật khẩu?
+                            </a>
+                        </div>
+
+                        <button type="submit" 
+                                class="w-full py-5 bg-gradient-to-r from-blue-500 to-pink-500 text-white rounded-3xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all">
+                            <i class="fa-solid fa-right-to-bracket mr-2"></i>
+                            ĐĂNG NHẬP
+                        </button>
+                    </form>
+
+                    <div class="my-8 flex items-center gap-4">
+                        <div class="flex-1 h-px bg-zinc-200"></div>
+                        <span class="text-zinc-400 text-sm font-medium">HOẶC</span>
+                        <div class="flex-1 h-px bg-zinc-200"></div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <button onclick="alert('Đăng nhập Google (demo)')" 
+                                class="flex items-center justify-center gap-3 py-4 border border-zinc-300 rounded-2xl hover:bg-zinc-50 transition">
+                            <i class="fa-brands fa-google text-red-500"></i>
+                            <span class="font-medium">Google</span>
+                        </button>
+                        <button onclick="alert('Đăng nhập Apple (demo)')" 
+                                class="flex items-center justify-center gap-3 py-4 border border-zinc-300 rounded-2xl hover:bg-zinc-50 transition">
+                            <i class="fa-brands fa-apple"></i>
+                            <span class="font-medium">Apple</span>
+                        </button>
+                    </div>
+
+                    <div class="text-center mt-10">
+                        <p class="text-zinc-600">
+                            Chưa có tài khoản? 
+                            <a href="register.html" class="text-blue-500 font-semibold hover:underline">
+                                Đăng ký miễn phí
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8 text-xs text-zinc-500 flex items-center justify-center gap-6">
+                    <div class="flex items-center gap-1">
+                        <i class="fa-solid fa-shield-halved text-emerald-500"></i>
+                        Bảo mật
+                    </div>
+                    <div>•</div>
+                    <div>Phù hợp cho phụ huynh Việt Nam</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="login.js"></script>
+</body>
+</html>
