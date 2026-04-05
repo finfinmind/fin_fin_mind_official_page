@@ -142,10 +142,6 @@ nav {
     transition: all 0.5s ease;
 }
 
-.demo-img:hover {
-    transform: scale(1.1) rotate(2deg);
-}
-
 /* TEXT */
 h1 {
     font-size: clamp(36px, 5vw, 64px);
