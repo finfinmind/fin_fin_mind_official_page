@@ -6,14 +6,9 @@
     <title>FinFin Mind • App Tư Duy Phản Biện Cho Trẻ 3-10 Tuổi</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="icon" type="image/png" href="Image/favicon.png">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">  <!-- Giữ nguyên link file css riêng -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="tail-container overflow-x-hidden">
 
@@ -22,7 +17,7 @@
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <a href="index.html">
-                <img src="Image/logo.png"  alt="FinFin Mind" class="h-14 w-auto transition-all duration-300 hover:scale-110 hover:drop-shadow-lg">
+                    <img src="Image/logo.png" alt="FinFin Mind" class="h-14 w-auto transition-all duration-300 hover:scale-110 hover:drop-shadow-lg">
                 </a>
             </div>
             
@@ -33,7 +28,7 @@
             </div>
 
             <div class="flex items-center gap-4">
-               <a href="mini_game.html" class="px-6 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-3xl ...">
+                <a href="mini_game.html" class="px-6 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-3xl font-semibold flex items-center gap-2 hover:scale-105 transition">
                     <i class="fa-solid fa-gamepad"></i>
                     Mini game
                 </a>
@@ -43,35 +38,35 @@
                     <i class="fa-solid fa-download"></i>
                     Tải ngay
                 </a>
-                <a href="login.html" 
-                   class="px-6 py-3 bg-white text-blue-950 rounded-3xl font-semibold text-sm hover:bg-blue-100 transition">
+                <a href="login.html" class="px-6 py-3 bg-white text-blue-950 rounded-3xl font-semibold text-sm hover:bg-blue-100 transition">
                     Đăng nhập
                 </a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO - BIỂN -->
+    <!-- HERO - BIỂN (đồng bộ với login) -->
     <header class="hero-bg min-h-screen flex items-center relative pb-24">
-        <div class="bubbles"><span></span></div>
+        <div class="bubbles"><span></span></div>   <!-- Bong bóng đã bật -->
 
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
             <div class="pt-32 md:pt-24">
-                <div class="inline-flex items-center gap-2 bg-black/10 backdrop-blur-md px-5 py-2 rounded-3xl text-sm mb-6">
+                <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-lg border border-white/50 px-5 py-2 rounded-3xl text-sm mb-6 text-zinc-900 font-medium shadow-md">
                     <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
                     Đang trong giai đoạn Beta
                 </div>
+                
                 <div class="flex justify-center md:justify-start mb-8">
-                    <img src="Image/appicon.png"  alt="FinFin Mind App Icon" class="w-28 h-28 md:w-36 md:h-36 rounded-3xl shadow-2xl ring-8 ring-white/60 transition-all duration-500 hover:scale-110 hover:rotate-6">            
+                    <img src="Image/appicon.png" alt="FinFin Mind App Icon" class="w-28 h-28 md:w-36 md:h-36 rounded-3xl shadow-2xl ring-8 ring-white/60 transition-all duration-500 hover:scale-110 hover:rotate-6">
                 </div>
+                
                 <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-none logo-font gradient-title">
                     Tư duy phản biện<br>
                     <span class="text-blue-400">Cho trẻ 3-10 tuổi.</span>
                 </h1>
                 
-                <p class="mt-8 text-xl max-w-lg">
-                    FinFin Mind – App duy nhất giúp trẻ phát triển tư duy phản biện qua trò chơi tương tác và game hóa. 
-                    Phân hệ trẻ + phân hệ phụ huynh liên kết chặt chẽ, theo dõi tiến bộ theo thang đo 5 cấp độ!
+                <p class="mt-8 text-xl max-w-lg bg-black/30 backdrop-blur-sm px-5 py-4 rounded-3xl text-white/95 leading-relaxed">
+                    FinFin Mind - Ứng dụng giúp trẻ phát triển tư duy phản biện thông qua hệ thống trò chơi tương tác sinh động. Nền tảng tích hợp chặt chẽ hai phân hệ dành cho trẻ và phụ huynh, cho phép theo dõi tiến bộ một cách trực quan theo thang đo 5 cấp độ rõ ràng và khoa học.
                 </p>
                 
                 <div class="mt-10 flex flex-wrap gap-4">
@@ -82,20 +77,23 @@
                     </button>
                     
                     <button onclick="alert('Đang chuyển hướng đến Google Play... (demo)')"
-                            class="flex-1 md:flex-none px-8 py-5 border-2 border-black/70 hover:border-black rounded-3xl font-semibold text-lg flex items-center justify-center gap-3 transition">
+                            class="flex-1 md:flex-none px-8 py-5 bg-white text-blue-950 rounded-3xl font-semibold text-lg flex items-center justify-center gap-3 hover:scale-105 transition">
                         <i class="fa-brands fa-google-play text-2xl"></i>
                         Google Play
                     </button>
                 </div>
                 
-                <div class="mt-12 flex items-center gap-8 text-sm">
+            <div class="mt-12 flex items-center gap-8 text-sm bg-black/40 backdrop-blur-xl border border-white/20 px-6 py-5 rounded-3xl text-white leading-relaxed shadow-xl">
+                <div class="flex items-center gap-4">
                     <div>
-                        <p class="font-semibold">Đã có hơn <b>12.450</b> gia đình</p>
-                        <p class="text-sm">đang đồng hành cùng con mỗi ngày</p>
+                        <p class="font-bold text-lg tracking-tight text-white/90 text-[15px]">Đã có hơn <span class="text-emerald-300 font-extrabold">12.450</span> gia đình</p>
+                        <p class="text-white/90 text-[15px]">đang đồng hành cùng con mỗi ngày</p>
                     </div>
                 </div>
             </div>
+            </div>
             
+            <!-- Mockup điện thoại -->
             <div class="relative flex justify-center">
                 <div class="relative w-[320px]">
                     <div class="bg-zinc-900 p-3 rounded-[3.5rem] shadow-2xl border border-blue-800/50">
@@ -112,16 +110,17 @@
         </div>
     </header>
 
-    <!-- TÍNH NĂNG -->
+    <!-- TÍNH NĂNG - Card rộng & hiện đại hơn -->
     <section id="tinh-nang" class="py-24 bg-zinc-900">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="px-6 py-2 bg-blue-900/50 text-sm font-medium rounded-3xl">CHẤT LƯỢNG CAO • PHÙ HỢP 3-10 TUỔI</span>
-                <h2 class="text-5xl font-semibold mt-4 logo-font tracking-tighter gradient-title">Những gì FinFin Mind mang lại cho con bạn</h2>
-                <p class=" mt-4 max-w-md mx-auto">Trò chơi tương tác + báo cáo phụ huynh theo thang đo 5 cấp độ – giúp trẻ hình thành tư duy phản biện tự nhiên và vui vẻ</p>
+                <span class="px-6 py-2 bg-blue-900/20 text-sm font-medium rounded-3xl">CHẤT LƯỢNG CAO • PHÙ HỢP 3-10 TUỔI</span>
+                <h2 class="text-5xl font-semibold mt-4 logo-font tracking-tighter gradient-title-2">Những gì FinFin Mind mang lại cho con bạn</h2>
+                <p class="mt-4 max-w-md mx-auto">Hệ thống trò chơi tương tác sinh động kết hợp báo cáo theo dõi dành cho phụ huynh với thang đo 5 cấp độ – đồng hành cùng trẻ hình thành tư duy phản biện một cách tự nhiên, hứng thú và bền vững.</p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
                 <div class="bg-zinc-800 rounded-3xl p-8 card-hover border border-blue-900/30">
                     <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">🧩</div>
                     <h3 class="text-2xl font-semibold mb-3">Trò chơi tình huống tương tác</h3>
@@ -132,6 +131,7 @@
                     </ul>
                 </div>
                 
+                <!-- Card 2 -->
                 <div class="bg-zinc-800 rounded-3xl p-8 card-hover border border-blue-900/30 relative">
                     <div class="absolute -top-3 right-8 bg-amber-400 text-[10px] font-bold px-4 py-1 rounded-3xl">MỚI</div>
                     <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">🎯</div>
@@ -143,6 +143,7 @@
                     </div>
                 </div>
                 
+                <!-- Card 3 -->
                 <div class="bg-zinc-800 rounded-3xl p-8 card-hover border border-blue-900/30">
                     <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">📊</div>
                     <h3 class="text-2xl font-semibold mb-3">Phân hệ phụ huynh – Theo dõi tiến bộ</h3>

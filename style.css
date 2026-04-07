@@ -43,61 +43,27 @@ nav {
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
-/* HERO */
 .hero-bg {
-    min-height: 200vh;
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
 
-    background: linear-gradient(135deg,
-        #e0f2fe 0%,
-        #dbeafe 40%,
-        #c7d2fe 75%,
-        #fdf2f8 100%
-    );
+    background: url('Image/background.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
 
     display: flex;
     align-items: center;
 }
 
-.hero-bg::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(circle at 20% 80%, rgba(165,243,252,0.7), transparent),
-        radial-gradient(circle at 80% 30%, rgba(233,213,255,0.6), transparent);
-    animation: soft-breathe 14s infinite ease-in-out;
-}
-
+.hero-bg::before,
 .hero-bg::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-        repeating-radial-gradient(circle at 30% 70%,
-            transparent 0,
-            transparent 20px,
-            rgba(255,255,255,0.4) 21px,
-            rgba(255,255,255,0.4) 40px);
-    opacity: 0.25;
-    animation: wave 20s linear infinite;
+    display: none !important;
 }
 
-/* BUBBLES */
-.bubbles span,
-.bubbles::before,
-.bubbles::after {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.9);
-    box-shadow: 0 8px 20px rgba(59,130,246,0.3);
-    animation: bubble 10s infinite ease-in-out;
+.bubbles {
+    display: none;
 }
-
-.bubbles::before { width: 18px; height: 18px; left: 12%; bottom: 15%; }
-.bubbles::after  { width: 22px; height: 22px; right: 15%; bottom: 28%; }
-.bubbles span    { width: 14px; height: 14px; left: 48%; bottom: 18%; }
 
 /* CARD */
 .card-hover {
@@ -163,10 +129,34 @@ p {
 
 /* GRADIENT TEXT */
 .gradient-title {
-    background: linear-gradient(90deg, #60a5fa, #f472b6, #fbbf24);
+    background: white;  
+    text-shadow:
+    2px 2px 0 #ffffff,
+    -2px -2px 0 #0865a0,
+    2px -2px 0 #0957cb,
+    -2px 2px 0 #0865a0,
+    0 0 5px #006eb2,
+    0 0 10px #0082d2,
+    0 0 20px #6cc7ff,
+    0 0 40px #ffffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    
+    font-weight: 700;
+    letter-spacing: -2px;
 }
+
+.gradient-title-2 {
+    background: linear-gradient(135deg, #0573f9, #e23e93);  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
 
 /* BUTTON */
 button, .btn {

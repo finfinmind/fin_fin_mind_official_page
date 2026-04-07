@@ -43,61 +43,23 @@ nav {
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
-/* HERO */
-.hero-bg {
-    min-height: 100vh;
-    position: relative;
-    overflow: hidden;
-
-    background: linear-gradient(135deg,
-        #e0f2fe 0%,
-        #dbeafe 40%,
-        #c7d2fe 75%,
-        #fdf2f8 100%
-    );
-
-    display: flex;
-    align-items: center;
-}
-
 .hero-bg::before {
     content: '';
     position: absolute;
     inset: 0;
-    background:
-        radial-gradient(circle at 20% 80%, rgba(165,243,252,0.7), transparent),
-        radial-gradient(circle at 80% 30%, rgba(233,213,255,0.6), transparent);
-    animation: soft-breathe 14s infinite ease-in-out;
+    background: rgba(0, 0, 0, 0.18);   /* chỉnh số 0.18 nếu muốn tối hơn / sáng hơn */
+    z-index: 1;
+    pointer-events: none;
 }
 
+.hero-bg::before,
 .hero-bg::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-        repeating-radial-gradient(circle at 30% 70%,
-            transparent 0,
-            transparent 20px,
-            rgba(255,255,255,0.4) 21px,
-            rgba(255,255,255,0.4) 40px);
-    opacity: 0.25;
-    animation: wave 20s linear infinite;
+    display: none !important;
 }
 
-/* BUBBLES */
-.bubbles span,
-.bubbles::before,
-.bubbles::after {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.9);
-    box-shadow: 0 8px 20px rgba(59,130,246,0.3);
-    animation: bubble 10s infinite ease-in-out;
+.bubbles {
+    display: none;
 }
-
-.bubbles::before { width: 18px; height: 18px; left: 12%; bottom: 15%; }
-.bubbles::after  { width: 22px; height: 22px; right: 15%; bottom: 28%; }
-.bubbles span    { width: 14px; height: 14px; left: 48%; bottom: 18%; }
 
 /* CARD */
 .card-hover {
@@ -251,22 +213,32 @@ button:hover {
 }
 
 .login-bg {
-    background: linear-gradient(135deg,
-        #e0f2fe 0%,
-        #dbeafe 40%,
-        #c7d2fe 75%,
-        #fdf2f8 100%);
+    background: url('Image/background.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
     overflow: hidden;
+    min-height: 100vh;
+}
+
+.login-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .login-card {
     background: white;
     border-radius: 2.5rem;
     box-shadow: 
-        0 20px 0 rgba(96,165,250,0.15),
-        0 40px 80px rgba(96,165,250,0.25);
+        0 25px 0 rgba(96,165,250,0.15),
+        0 45px 80px rgba(96,165,250,0.25);
     border: 4px solid rgba(96,165,250,0.2);
+    position: relative;
+    z-index: 2;
 }
 
 .login-input {
@@ -277,8 +249,8 @@ button:hover {
 }
 
 .login-input:focus {
-    border-color: rgb(96 165 250);
-    box-shadow: 0 0 0 4px rgba(96,165,250,0.15);
+    border-color: rgb(59 130 246);
+    box-shadow: 0 0 0 4px rgba(59,130,246,0.15);
     transform: scale(1.02);
     outline: none;
 }
