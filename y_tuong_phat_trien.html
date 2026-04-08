@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ý tưởng phát triển • FinFin Mind</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="Image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 overflow-x-hidden text-slate-800">
+
+    <nav class="bg-zinc-950 border-b border-blue-900 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html">
+                    <img src="Image/logo.png" alt="FinFin Mind" class="h-14 w-auto transition-all duration-300 hover:scale-110 hover:drop-shadow-lg">
+                </a>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+                <a href="muc_tieu.html" class="nav-link text-blue-100 hover:text-white">Mục tiêu</a>
+                <a href="y_tuong_phat_trien.html" class="nav-link text-white font-bold border-b-2 border-blue-500 pb-1">Ý tưởng phát triển</a>
+                <a href="ke-hoach.html" class="nav-link text-blue-100 hover:text-white">Kế hoạch</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="mini_game.html" class="px-6 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-3xl font-semibold flex items-center gap-2 hover:scale-105 transition">
+                    <i class="fa-solid fa-gamepad"></i> Mini game
+                </a>
+                <a href="#" onclick="alert('Chức năng tải app đang được phát triển!')" 
+                   class="px-6 py-3 bg-white text-blue-950 rounded-3xl font-semibold text-sm flex items-center gap-2 hover:bg-blue-100 transition shadow-md">
+                    <i class="fa-solid fa-download"></i> Tải ngay
+                </a>
+                <a href="login.html" class="px-6 py-3 bg-white text-blue-950 rounded-3xl font-semibold text-sm hover:bg-blue-100 transition shadow-md">
+                    Đăng nhập
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-zinc-900 py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white logo-font mb-6 leading-tight text-center">
+                Ý tưởng phát triển <span class="text-blue-400">Sản phẩm</span>
+            </h1>
+            <p class="text-blue-100 text-xl text-center max-w-3xl mx-auto leading-relaxed">
+                Chi tiết về cấu trúc, tính năng ưu việt và lộ trình công nghệ của ứng dụng FinFin Mind.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-16">
+        
+        <section class="mb-20">
+            <div class="bg-white rounded-[2rem] p-8 md:p-12 shadow-xl border border-blue-50 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full -mr-16 -mt-16"></div>
+                <h2 class="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-4 logo-font">
+                    <span class="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-xl">01</span>
+                    Tổng quan sản phẩm
+                </h2>
+                <p class="text-lg text-slate-600 leading-relaxed text-justify">
+                    Sản phẩm của đề án là ứng dụng <strong>FinFin Mind</strong>, một nền tảng giáo dục số hoạt động trên thiết bị di động (Android và iOS), được thiết kế nhằm phát triển tư duy phản biện cho trẻ em từ 3 đến 10 tuổi thông qua hình thức học tập tương tác và game hóa.
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-slate-900 mb-10 flex items-center gap-4 logo-font">
+                <span class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-xl">02</span>
+                Cấu trúc phân hệ chính
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-[2.5rem] p-10 shadow-lg border-t-8 border-blue-400">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-child-reaching"></i> Phân hệ Trẻ em
+                    </h3>
+                    <p class="text-slate-600 mb-6 italic">Cung cấp hệ thống trò chơi giáo dục tương tác, yêu cầu trẻ:</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-slate-700 bg-blue-50 p-3 rounded-xl border border-blue-100">
+                            <i class="fa-solid fa-magnifying-glass text-blue-500"></i> Nhận diện vấn đề
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-700 bg-blue-50 p-3 rounded-xl border border-blue-100">
+                            <i class="fa-solid fa-code-branch text-blue-500"></i> Lựa chọn phương án xử lý
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-700 bg-blue-50 p-3 rounded-xl border border-blue-100">
+                            <i class="fa-solid fa-comment-dots text-blue-500"></i> Giải thích lý do lựa chọn
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-700 bg-blue-50 p-3 rounded-xl border border-blue-100">
+                            <i class="fa-solid fa-arrows-rotate text-blue-500"></i> Nhận phản hồi và điều chỉnh suy nghĩ
+                        </li>
+                    </ul>
+                    <p class="text-slate-600 leading-relaxed text-sm bg-slate-50 p-5 rounded-2xl">
+                        Các trò chơi được sắp xếp theo lộ trình tăng dần về độ khó, phù hợp với khả năng nhận thức của từng nhóm tuổi, giúp trẻ từng bước hình thành thói quen suy nghĩ độc lập và phản biện. Mỗi nhiệm vụ hoàn thành sẽ nhận được phần thưởng nhất định để gây hứng thú.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-[2.5rem] p-10 shadow-lg border-t-8 border-emerald-400">
+                    <h3 class="text-2xl font-bold text-emerald-600 mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-user-gear"></i> Phân hệ Phụ huynh
+                    </h3>
+                    <p class="text-slate-600 mb-6">Cho phép theo dõi quá trình học tập thông qua hệ thống báo cáo dữ liệu:</p>
+                    <div class="space-y-3 mb-8">
+                        <div class="flex justify-between text-sm font-medium border-b pb-2"><span>Thời gian tương tác</span><i class="fa-solid fa-clock text-emerald-500"></i></div>
+                        <div class="flex justify-between text-sm font-medium border-b pb-2"><span>Mức độ hoàn thành nhiệm vụ</span><i class="fa-solid fa-check-double text-emerald-500"></i></div>
+                        <div class="flex justify-between text-sm font-medium border-b pb-2"><span>Xu hướng phát triển tư duy</span><i class="fa-solid fa-chart-line text-emerald-500"></i></div>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm bg-slate-50 p-5 rounded-2xl">
+                        Hệ thống đánh giá theo 5 thang cấp độ giúp phụ huynh theo dõi tiến trình trực quan, đồng thời cung cấp dữ liệu để ứng dụng cá nhân hóa lộ trình học tập phù hợp với năng lực và tốc độ phát triển của từng trẻ.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <div class="bg-zinc-900 rounded-[3rem] p-8 md:p-16 text-white shadow-2xl">
+                <h2 class="text-3xl font-bold mb-12 text-center logo-font">Thang đo 5 cấp độ phát triển tư duy</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-6 bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition">
+                        <span class="text-4xl font-black text-white/20">01</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-red-400 mb-2">Chưa hình thành</h4>
+                            <p class="text-slate-300 text-sm">Trẻ gặp khó khăn trong việc hiểu tình huống, phụ thuộc nhiều vào gợi ý và chưa thể đưa ra lựa chọn hoặc giải thích lý do.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6 bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition">
+                        <span class="text-4xl font-black text-white/20">02</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-orange-400 mb-2">Hình thành ban đầu</h4>
+                            <p class="text-slate-300 text-sm">Trẻ có thể đưa ra lựa chọn đơn giản nhưng còn mang tính ngẫu nhiên, lập luận chưa rõ ràng và chưa ổn định.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6 bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition">
+                        <span class="text-4xl font-black text-white/20">03</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-yellow-400 mb-2">Đang phát triển</h4>
+                            <p class="text-slate-300 text-sm">Trẻ bắt đầu biết phân tích tình huống, đưa ra lựa chọn hợp lý và giải thích được suy nghĩ của mình ở mức cơ bản.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6 bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition">
+                        <span class="text-4xl font-black text-white/20">04</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-emerald-400 mb-2">Phát triển tốt</h4>
+                            <p class="text-slate-300 text-sm">Trẻ thể hiện khả năng cân nhắc nhiều phương án, giải thích lựa chọn tương đối logic và biết điều chỉnh suy nghĩ khi được phản hồi.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6 bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition">
+                        <span class="text-4xl font-black text-white/20">05</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-blue-400 mb-2">Phát triển vượt trội</h4>
+                            <p class="text-slate-300 text-sm">Trẻ chủ động đặt câu hỏi, so sánh các phương án, đưa ra quyết định có lập luận rõ ràng và thể hiện tư duy phản biện nhất quán.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 flex items-center gap-4 logo-font">
+                <span class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center text-xl">03</span>
+                Các tính năng ưu việt chính
+            </h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="space-y-4">
+                    <h4 class="text-xl font-bold text-slate-800 flex items-center gap-3"><i class="fa-solid fa-sliders text-purple-500"></i> Lộ trình học tập phân cấp</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Chia thành hai nhóm tuổi chính: 3-6 tuổi và 6-10 tuổi. Mỗi nhóm có mục tiêu tư duy cụ thể, dạng trò chơi và mức độ yêu cầu lập luận khác nhau. Hệ thống tự động điều chỉnh độ khó dựa trên kết quả tương tác thực tế.</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-xl font-bold text-slate-800 flex items-center gap-3"><i class="fa-solid fa-gamepad text-purple-500"></i> Hệ thống Game hóa tư duy</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Chú trọng vào quá trình: So sánh phương án, phân tích nguyên nhân - kết quả, nhận diện đúng/sai và chịu trách nhiệm với lựa chọn. Giúp trẻ hứng thú và giảm áp lực học tập.</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-xl font-bold text-slate-800 flex items-center gap-3"><i class="fa-solid fa-bolt text-purple-500"></i> Phản hồi tức thời & Định hướng</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Giải thích lý do phù hợp hoặc chưa phù hợp ngay sau mỗi lượt chơi. Thay vì chỉ đưa ra đúng/sai, hệ thống gợi ý hướng suy nghĩ khác và khuyến khích trẻ thử lại.</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-xl font-bold text-slate-800 flex items-center gap-3"><i class="fa-solid fa-square-poll-vertical text-purple-500"></i> Theo dõi & Báo cáo trực quan</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Tổng hợp chỉ số về mức độ hoàn thành, tần suất điều chỉnh lựa chọn và xu hướng cải thiện. Dữ liệu được trực quan hóa dưới dạng biểu đồ để phụ huynh nắm bắt chính xác theo thời gian.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-8">
+            <div class="bg-red-50 p-8 rounded-[2rem] border border-red-100">
+                <h4 class="font-bold text-red-800 mb-4 flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation"></i> Nút thắt kỹ thuật</h4>
+                <ul class="text-sm text-red-900/70 space-y-3 list-disc pl-4">
+                    <li>Chuyển hóa khái niệm trừu tượng thành tình huống đơn giản cho trẻ em.</li>
+                    <li>Đánh giá tư duy dựa trên hành vi thay vì đúng/sai.</li>
+                    <li>Cá nhân hóa lộ trình theo tốc độ nhận thức khác biệt.</li>
+                </ul>
+            </div>
+            <div class="bg-blue-50 p-8 rounded-[2rem] border border-blue-100">
+                <h4 class="font-bold text-blue-800 mb-4 flex items-center gap-2"><i class="fa-solid fa-microchip"></i> Tiêu chí cần đạt</h4>
+                <ul class="text-sm text-blue-900/70 space-y-3 list-disc pl-4">
+                    <li>Vận hành ổn định trên thiết bị di động, giao diện thân thiện.</li>
+                    <li>Nội dung có cấu trúc rõ ràng, dễ mở rộng.</li>
+                    <li>Xử lý dữ liệu chính xác, nhất quán và bảo mật tuyệt đối.</li>
+                </ul>
+            </div>
+            <div class="bg-emerald-50 p-8 rounded-[2rem] border border-emerald-100">
+                <h4 class="font-bold text-emerald-800 mb-4 flex items-center gap-2"><i class="fa-solid fa-handshake"></i> Phạm vi áp dụng</h4>
+                <ul class="text-sm text-emerald-900/70 space-y-3 list-disc pl-4">
+                    <li>Sử dụng trong gia đình và hoạt động giáo dục bổ trợ.</li>
+                    <li>Đóng vai trò hỗ trợ, không thay thế giáo dục chính quy.</li>
+                    <li>Phụ thuộc vào sự đồng hành và định hướng của phụ huynh.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-zinc-950 py-12 text-center border-t border-zinc-800 mt-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <img src="Image/logo.png" alt="FinFin Mind" class="h-12 mx-auto mb-6 opacity-80">
+            <p class="text-zinc-500 text-sm">© 2024 FinFin Mind Project. Mọi quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
