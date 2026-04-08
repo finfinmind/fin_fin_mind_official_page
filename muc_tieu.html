@@ -13,34 +13,50 @@
 <body class="bg-zinc-50 overflow-x-hidden text-zinc-800">
 
     <nav class="bg-zinc-950 border-b border-blue-900 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-            <div class="flex items-center gap-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            
+            <div class="flex items-center z-50 relative shrink-0">
                 <a href="index.html">
-                    <img src="Image/logo.png" alt="FinFin Mind" class="h-14 w-auto transition-all duration-300 hover:scale-110 hover:drop-shadow-lg">
+                    <img src="Image/logo.png" alt="FinFin Mind" class="h-10 md:h-14 w-auto transition-all duration-300 hover:scale-110">
                 </a>
             </div>
             
-            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+            <div class="hidden md:flex items-center gap-10 text-sm font-medium absolute left-1/2 -translate-x-1/2 z-50">
                 <a href="muc_tieu.html" class="nav-link text-white font-bold border-b-2 border-blue-500 pb-1">Mục tiêu</a>
                 <a href="y_tuong_phat_trien.html" class="nav-link text-blue-100 hover:text-white">Ý tưởng phát triển</a>
                 <a href="ke-hoach.html" class="nav-link text-blue-100 hover:text-white">Kế hoạch</a>
             </div>
 
-            <div class="flex items-center gap-4">
-                <a href="mini_game.html" class="px-6 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-3xl font-semibold flex items-center gap-2 hover:scale-105 transition">
-                    <i class="fa-solid fa-gamepad"></i>
-                    Mini game
+            <div class="flex items-center gap-2 md:gap-4 z-50 relative">
+                
+                <a href="mini_game.html" class="px-3 py-2 md:px-6 md:py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-[14px] md:rounded-3xl font-bold text-[11px] md:text-sm flex items-center gap-1.5 md:gap-2 hover:scale-105 transition shadow-md whitespace-nowrap">
+                    <i class="fa-solid fa-gamepad"></i> <span class="hidden sm:inline">Mini game</span><span class="sm:hidden">Game</span>
                 </a>
                 
                 <a href="#" onclick="alert('Chức năng tải app đang được phát triển!')" 
-                   class="px-6 py-3 bg-white text-blue-950 rounded-3xl font-semibold text-sm flex items-center gap-2 hover:bg-blue-100 transition">
-                    <i class="fa-solid fa-download"></i>
-                    Tải ngay
+                   class="hidden md:flex px-6 py-3 bg-white text-blue-950 rounded-3xl font-semibold text-sm items-center gap-2 hover:bg-blue-100 transition whitespace-nowrap shadow-md">
+                    <i class="fa-solid fa-download"></i> Tải ngay
                 </a>
-                <a href="login.html" class="px-6 py-3 bg-white text-blue-950 rounded-3xl font-semibold text-sm hover:bg-blue-100 transition">
+                
+                <a href="login.html" class="px-3 py-2 md:px-6 md:py-3 border border-zinc-600 md:border-none md:bg-white text-white md:text-blue-950 rounded-[14px] md:rounded-3xl font-bold text-[11px] md:text-sm hover:bg-zinc-800 md:hover:bg-blue-100 transition whitespace-nowrap">
                     Đăng nhập
                 </a>
+
+                <button id="mobile-menu-btn" class="md:hidden text-white text-xl ml-1 focus:outline-none w-8 h-8 flex items-center justify-center rounded-lg hover:bg-white/10 transition">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
+        </div>
+
+        <div id="mobile-menu" class="fixed top-0 right-0 h-full w-[65vw] bg-zinc-950 border-l border-zinc-800 z-40 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col justify-start items-start gap-4 pt-24 px-6 pb-10 shadow-2xl overflow-y-auto">
+            
+            <a href="muc_tieu.html" class="w-full text-lg text-white font-bold border-b border-zinc-800 pb-3">Mục tiêu</a>
+            <a href="y_tuong_phat_trien.html" class="w-full text-lg text-zinc-400 font-medium hover:text-white border-b border-zinc-800 pb-3">Ý tưởng phát triển</a>
+            <a href="ke-hoach.html" class="w-full text-lg text-zinc-400 font-medium hover:text-white border-b border-zinc-800 pb-3">Kế hoạch</a>
+            
+            <a href="#" onclick="alert('Chức năng tải app đang được phát triển!')" class="w-full mt-4 text-center py-3 bg-white text-blue-950 rounded-2xl font-bold text-base shadow-lg">
+                <i class="fa-solid fa-download mr-2"></i> Tải app ngay
+            </a>
         </div>
     </nav>
 
