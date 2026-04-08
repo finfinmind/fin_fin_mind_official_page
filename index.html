@@ -30,13 +30,13 @@
 
             <div class="flex items-center gap-2 md:gap-4 z-50 relative">
                 
-                <a href="mini_game.html" class="hidden md:flex px-6 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-3xl font-semibold items-center gap-2 hover:scale-105 transition">
-                    <i class="fa-solid fa-gamepad"></i> Mini game
+                <a href="mini_game.html" class="px-3 py-2 md:px-6 md:py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-[14px] md:rounded-3xl font-bold text-[11px] md:text-sm flex items-center gap-1.5 md:gap-2 hover:scale-105 transition shadow-md whitespace-nowrap">
+                    <i class="fa-solid fa-gamepad"></i> <span class="hidden sm:inline">Mini game</span><span class="sm:hidden">Game</span>
                 </a>
                 
                 <a href="#" onclick="alert('Chức năng tải app đang được phát triển!')" 
-                   class="px-3 py-2 md:px-6 md:py-3 bg-white text-blue-950 rounded-[14px] md:rounded-3xl font-bold text-[11px] md:text-sm flex items-center gap-1.5 md:gap-2 hover:bg-blue-100 transition whitespace-nowrap shadow-md">
-                    <i class="fa-solid fa-download"></i> Tải<span class="hidden md:inline"> ngay</span>
+                   class="hidden md:flex px-6 py-3 bg-white text-blue-950 rounded-3xl font-semibold text-sm items-center gap-2 hover:bg-blue-100 transition whitespace-nowrap shadow-md">
+                    <i class="fa-solid fa-download"></i> Tải ngay
                 </a>
                 
                 <a href="login.html" class="px-3 py-2 md:px-6 md:py-3 border border-zinc-600 md:border-none md:bg-white text-white md:text-blue-950 rounded-[14px] md:rounded-3xl font-bold text-[11px] md:text-sm hover:bg-zinc-800 md:hover:bg-blue-100 transition whitespace-nowrap">
@@ -49,20 +49,17 @@
             </div>
         </div>
 
-        <div id="mobile-menu" class="fixed inset-0 bg-zinc-950 z-40 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col justify-start items-center gap-6 pt-28 pb-10 overflow-y-auto">
+        <div id="mobile-menu" class="fixed top-0 right-0 h-full w-[65vw] bg-zinc-950 border-l border-zinc-800 z-40 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col justify-start items-start gap-4 pt-24 px-6 pb-10 shadow-2xl overflow-y-auto">
             
-            <a href="muc_tieu.html" class="text-xl text-white font-medium hover:text-blue-400">Mục tiêu</a>
-            <a href="y_tuong_phat_trien.html" class="text-xl text-white font-medium hover:text-blue-400">Ý tưởng phát triển</a>
-            <a href="ke-hoach.html" class="text-xl text-white font-medium hover:text-blue-400">Kế hoạch</a>
+            <a href="muc_tieu.html" class="w-full text-lg text-zinc-400 font-medium hover:text-white border-b border-zinc-800 pb-3">Mục tiêu</a>
+            <a href="y_tuong_phat_trien.html" class="w-full text-lg text-zinc-400 font-medium hover:text-white border-b border-zinc-800 pb-3">Ý tưởng phát triển</a>
+            <a href="ke-hoach.html" class="w-full text-lg text-zinc-400 font-medium hover:text-white border-b border-zinc-800 pb-3">Kế hoạch</a>
             
-            <div class="w-2/3 h-px bg-zinc-800 my-4"></div>
-            
-            <a href="mini_game.html" class="w-2/3 text-center py-4 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-2xl font-bold text-lg shadow-lg">
-                <i class="fa-solid fa-gamepad mr-2"></i> Mini game
+            <a href="#" onclick="alert('Chức năng tải app đang được phát triển!')" class="w-full mt-4 text-center py-3 bg-white text-blue-950 rounded-2xl font-bold text-base shadow-lg">
+                <i class="fa-solid fa-download mr-2"></i> Tải app ngay
             </a>
         </div>
     </nav>
-
     <!-- HERO - BIỂN (đồng bộ với login) -->
     <header class="hero-bg min-h-screen flex items-center relative pb-24">
         <div class="bubbles"><span></span></div>   <!-- Bong bóng đã bật -->
